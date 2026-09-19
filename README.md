@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/30435d9bd6be1a76ce9a8e446fca5bb6b280346d/Anime%20Developer%20Illustration.png" width="100%" />
+</p>
 <h1 align="center">Hi there, I'm Arsalan Khan 👋</h1>
 <h3 align="center">Frontend Developer | Turning Ideas Into Real Websites</h3>
 
