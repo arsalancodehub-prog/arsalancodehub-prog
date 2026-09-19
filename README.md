@@ -51,7 +51,11 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=true&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6" alt="streak stats" />
+  <img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=true&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=arsalancodehub-prog&theme=onedark&no-frame=true&row=1&column=6" />
 </p>
 
 ### 🏆 Trophies
