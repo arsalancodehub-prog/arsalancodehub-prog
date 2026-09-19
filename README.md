@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/dc46fa13690e45383f36fa58f1a8f1bb05f269b9/Gemini_Generated_Image_y0v1bdy0v1bdy0v1%20(1).jpg" />
+  <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/0934cdd9fb5c439a76658d335424dca0d97c7a58/Gemini_Generated_Image_y0v1bdy0v1bdy0v1%20(1).jpg" width="100%" />
+</p>
 </p>
 <h1 align="center">Hi there, I'm Arsalan Khan 👋</h1>
 <h3 align="center">Frontend Developer | Turning Ideas Into Real Websites</h3>
@@ -14,9 +15,9 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/www.linkedin.com/in/arsalanofficial" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0a192f?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:youremail@gmail.com"><img src="https://img.shields.io/badge/Gmail-0a192f?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://instagram.com/https://www.instagram.com/arsalan_khan.799/" target="_blank"><img src="https://img.shields.io/badge/Instagram-0a192f?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+  <a href="https://linkedin.com/in/arsalanofficial" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0a192f?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="mailto:arsalandzn@gmail.com"><img src="https://img.shields.io/badge/Gmail-0a192f?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://instagram.com/arsalan_khan.799/" target="_blank"><img src="https://img.shields.io/badge/Instagram-0a192f?style=for-the-badge&logo=instagram&logoColor=white" /></a>
 </p>
 
 ---
@@ -45,18 +46,18 @@
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&hide_border=true&bg_color=0a192f&title_color=64b5f6&icon_color=64b5f6&text_color=ffffff" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&hide_border=true&bg_color=0a192f&title_color=64b5f6&text_color=ffffff" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=arsalancodehub-prog&show_icons=true&hide_border=true&bg_color=0a192f&title_color=64b5f6&icon_color=64b5f6&text_color=ffffff" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalancodehub-prog&layout=compact&hide_border=true&bg_color=0a192f&title_color=64b5f6&text_color=ffffff" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=yourusername&hide_border=true&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6" alt="streak stats" />
+  <img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=true&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6" alt="streak stats" />
 </p>
 
 ### 🏆 Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=onedark&no-frame=true&row=1&column=6" />
+  <img src="https://github-profile-trophy.vercel.app/?username=arsalancodehub-prog&theme=onedark&no-frame=true&row=1&column=6" />
 </p>
 
 ---
