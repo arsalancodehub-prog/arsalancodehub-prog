@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0A192F&height=200&section=header&text=Welcome%20To%20My%20Profile&fontSize=40&fontColor=64B5F6&animation=fadeIn" />
+  <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/dc46fa13690e45383f36fa58f1a8f1bb05f269b9/Gemini_Generated_Image_y0v1bdy0v1bdy0v1%20(1).jpg" />
 </p>
 <h1 align="center">Hi there, I'm Arsalan Khan 👋</h1>
 <h3 align="center">Frontend Developer | Turning Ideas Into Real Websites</h3>
