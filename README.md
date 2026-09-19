@@ -34,7 +34,7 @@
   <img src="https://img.shields.io/badge/Git-0a192f?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
-### 🪪 My Dev ID Card
+### My Dev ID Card
 <p align="center">
   <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/0ba7720fa95a6b3b6ccd105f0c708986f28bd3ab/idcard%20(2).svg" width="220" />
 </p>
