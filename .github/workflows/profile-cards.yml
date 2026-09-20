@@ -11,6 +11,11 @@ on:
 permissions:
   contents: write
 
+# one run at a time, so two runs never push at the same moment
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
 jobs:
   profile-cards:
     runs-on: ubuntu-latest
@@ -47,6 +52,7 @@ jobs:
           custom-title: Arsalan Khan — GitHub Contributions
           colors: "#0a192f #1e3a8a #64b5f6 #e8f1ff #e8f1ff"
           hide-keys: general,repositories,languages
+          commit-and-push: false   # the last step commits everything together
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
