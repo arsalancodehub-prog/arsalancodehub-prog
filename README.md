@@ -9,7 +9,7 @@
 
 <td width="34%" align="center" valign="middle">
 
-<img src="./idcard%20(2).svg" alt="Arsalan Khan ID Card" width="330"/>
+<img src="./idcard.svg?v=1" alt="Arsalan Khan ID Card" width="330"/>
 
 </td>
 
@@ -70,10 +70,10 @@
 
 <br/><br/>
 
-### 🏆 GitHub Achievements
+### 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="./profile/trophy.svg?v=3" alt="GitHub Achievements" width="90%"/>
+  <img src="./profile/trophy.svg?v=4" alt="GitHub Trophies" width="95%"/>
 </p>
 
 <br/><br/>
@@ -91,17 +91,12 @@
 
 <br/><br/>
 
-
-
 ### 📫 Let's Connect
 
 <p align="center">
 
   <a href="https://www.linkedin.com/in/arsalanofficial">
-    <img
-      src="https://img.shields.io/badge/LinkedIn-0a192f?style=for-the-badge&logo=linkedin&logoColor=64b5f6"
-      alt="LinkedIn"
-    />
+    <img src="./profile/linkedin.svg" alt="LinkedIn" height="28"/>
   </a>
 
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arsalandzn@gmail.com">
@@ -127,5 +122,3 @@
 <br/><br/>
 
 *⭐ Always learning, always building.* 💙
-
-</div>
