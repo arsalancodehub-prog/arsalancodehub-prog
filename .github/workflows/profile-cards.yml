@@ -50,13 +50,230 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-             # 🏆 Premium Navy GitHub Achievements
-      - name: Generate GitHub Trophies
-        uses: soulteary/github-profile-trophy-action@v1.0.0
-        with:
-          options: "username=arsalancodehub-prog&theme=darkhub&no-bg=true&no-frame=true&column=6&margin-w=18&margin-h=10&rank=SSS,SS, S,AAA,AA,A,B"
-          path: profile/trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+      # 🏆 Trophy room: all 12 trophies in navy style (+ the LinkedIn badge image)
+      - name: Generate Trophy Room
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+        run: |
+          python3 - <<'PYEOF'
+          #!/usr/bin/env python3
+          """Builds profile/trophy.svg: one animated trophy per GitHub metric (all of them, always).
+
+          Runs inside GitHub Actions with the built-in GITHUB_TOKEN. No third-party service needed.
+          Set TROPHY_SAMPLE=1 to render made-up numbers (used for design previews).
+          """
+          import json, os, sys, urllib.request
+          from datetime import datetime, timezone
+
+          USER = os.environ.get("USERNAME") or (sys.argv[1] if len(sys.argv) > 1 else "arsalancodehub-prog")
+          OUT = os.environ.get("OUT", "profile/trophy.svg")
+          TOKEN = os.environ.get("GITHUB_TOKEN", "")
+
+          LINKEDIN_BADGE = r"""<svg xmlns="http://www.w3.org/2000/svg" width="111" height="28" role="img" aria-label="LINKEDIN"><title>LINKEDIN</title><g shape-rendering="crispEdges"><rect width="111" height="28" fill="#0a192f"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="100"><image x="9" y="7" width="14" height="14" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzY0YjVmNiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+"/><text transform="scale(.1)" x="655" y="175" textLength="670" font-weight="bold">LINKEDIN</text></g></svg>"""
+
+          # ------------------------------------------------------------------ data
+          def gql(query, variables):
+              req = urllib.request.Request(
+                  "https://api.github.com/graphql",
+                  data=json.dumps({"query": query, "variables": variables}).encode(),
+                  headers={**({"Authorization": f"bearer {TOKEN}"} if TOKEN else {}), "Content-Type": "application/json", "User-Agent": "trophy-room"},
+              )
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  data = json.load(r)
+              if "errors" in data:
+                  raise RuntimeError(data["errors"])
+              return data["data"]
+
+          def rest(path):
+              req = urllib.request.Request(
+                  "https://api.github.com" + path,
+                  headers={**({"Authorization": f"bearer {TOKEN}"} if TOKEN else {}), "Accept": "application/vnd.github+json", "User-Agent": "trophy-room"},
+              )
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  return json.load(r)
+
+          def safe(fn, default=0):
+              try:
+                  return fn()
+              except Exception as e:  # one failing metric must never break the whole trophy room
+                  print("warning:", e, file=sys.stderr)
+                  return default
+
+          def fetch_stats():
+              user = rest(f"/users/{USER}")
+              created = datetime.fromisoformat(user["created_at"].replace("Z", "+00:00"))
+              now = datetime.now(timezone.utc)
+
+              repos_all, page = [], 1
+              while True:
+                  chunk = rest(f"/users/{USER}/repos?per_page=100&type=owner&page={page}")
+                  repos_all += chunk
+                  if len(chunk) < 100:
+                      break
+                  page += 1
+              own = [r for r in repos_all if not r["fork"]]
+              stars = sum(r["stargazers_count"] for r in own)
+              langs = {r["language"] for r in own if r["language"]}
+
+              issues = safe(lambda: rest(f"/search/issues?q=author:{USER}+type:issue&per_page=1")["total_count"])
+              prs = safe(lambda: rest(f"/search/issues?q=author:{USER}+type:pr&per_page=1")["total_count"])
+              orgs = safe(lambda: len(rest(f"/users/{USER}/orgs")))
+
+              q = """query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){
+                contributionsCollection(from:$from,to:$to){totalCommitContributions
+                  totalPullRequestReviewContributions contributionCalendar{totalContributions}}}}"""
+              commits = reviews = contribs = 0
+              gql_ok = 0
+              for year in range(created.year, now.year + 1):
+                  start = max(created, datetime(year, 1, 1, tzinfo=timezone.utc))
+                  end = min(now, datetime(year, 12, 31, 23, 59, 59, tzinfo=timezone.utc))
+                  c = safe(lambda: gql(q, {"login": USER, "from": start.isoformat(), "to": end.isoformat()})["user"]["contributionsCollection"], None)
+                  if c:
+                      gql_ok += 1
+                      commits += c["totalCommitContributions"]
+                      reviews += c["totalPullRequestReviewContributions"]
+                      contribs += c["contributionCalendar"]["totalContributions"]
+
+              if not gql_ok:  # no token / GraphQL blocked -> approximate from the public search API
+                  commits = safe(lambda: rest(f"/search/commits?q=author:{USER}&per_page=1")["total_count"])
+                  reviews = safe(lambda: rest(f"/search/issues?q=reviewed-by:{USER}+type:pr&per_page=1")["total_count"])
+                  contribs = commits + prs + issues + reviews
+
+              return {"stars": stars, "commits": commits, "followers": user["followers"], "issues": issues, "prs": prs,
+                      "repos": len(own), "reviews": reviews, "experience": int((now - created).days // 365.25),
+                      "orgs": orgs, "gists": user["public_gists"], "languages": len(langs), "contribs": contribs}
+
+          SAMPLE = {"stars": 3500, "commits": 620, "followers": 12, "issues": 3, "prs": 60, "repos": 8,
+                    "reviews": 0, "experience": 5, "orgs": 1, "gists": 3, "languages": 6, "contribs": 1500}
+
+          # ------------------------------------------------------------------ ranks
+          RANKS = ["C", "B", "A", "AA", "AAA", "S", "SS", "SSS"]
+          COLORS = {"SSS": "#FFC24D", "SS": "#FFDE94", "S": "#EAF8FF", "AAA": "#A8F0FF", "AA": "#7FE0FF",
+                    "A": "#64B5F6", "B": "#6E9BE0", "C": "#8398BC", "LOCKED": "#3A5A8C"}
+          #            key          title            thresholds for C,B,A,AA,AAA,S,SS,SSS
+          TROPHIES = [
+              ("stars",      "Stars",          [1, 3, 10, 30, 100, 300, 1000, 3000]),
+              ("commits",    "Commits",        [1, 50, 150, 300, 500, 1000, 2500, 5000]),
+              ("followers",  "Followers",      [1, 5, 10, 20, 50, 100, 300, 1000]),
+              ("issues",     "Issues",         [1, 5, 10, 25, 50, 100, 250, 500]),
+              ("prs",        "Pull Requests",  [1, 5, 10, 25, 50, 100, 250, 500]),
+              ("repos",      "Repositories",   [1, 5, 10, 20, 30, 50, 80, 100]),
+              ("reviews",    "Reviews",        [1, 5, 10, 25, 50, 100, 250, 500]),
+              ("experience", "Experience",     [1, 2, 3, 5, 7, 9, 10, 12]),
+              ("orgs",       "Organizations",  [1, 2, 3, 4, 5, 6, 8, 10]),
+              ("gists",      "Gists",          [1, 5, 10, 20, 50, 100, 200, 500]),
+              ("languages",  "Languages",      [1, 2, 3, 4, 5, 7, 10, 15]),
+              ("contribs",   "Contributions",  [1, 100, 300, 600, 1000, 2000, 4000, 8000]),
+          ]
+
+          def rank_of(value, th):
+              r = "LOCKED"
+              for name, t in zip(RANKS, th):
+                  if value >= t:
+                      r = name
+              return r
+
+          def fmt(n):
+              return f"{n/1000:.1f}k".replace(".0k", "k") if n >= 1000 else str(n)
+
+          def shade(hexc, f):
+              h = hexc.lstrip("#"); r, g, b = (int(h[i:i+2], 16) for i in (0, 2, 4))
+              if f >= 0: r, g, b = (int(c + (255 - c) * f) for c in (r, g, b))
+              else:      r, g, b = (int(c * (1 + f)) for c in (r, g, b))
+              return f"#{r:02X}{g:02X}{b:02X}"
+
+          # ------------------------------------------------------------------ svg
+          def build(stats):
+              W, H = 900, 440
+              CW, CH, GAP = 128, 176, 12
+              x0 = (W - (6 * CW + 5 * GAP)) // 2
+              grads = "".join(
+                  f'<linearGradient id="g{k}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{shade(c, .55)}"/>'
+                  f'<stop offset=".5" stop-color="{c}"/><stop offset="1" stop-color="{shade(c, -.35)}"/></linearGradient>'
+                  f'<radialGradient id="r{k}"><stop offset="0" stop-color="{c}" stop-opacity=".55"/><stop offset="1" stop-color="{c}" stop-opacity="0"/></radialGradient>'
+                  for k, c in COLORS.items())
+              cards = ""
+              for i, (key, title, th) in enumerate(TROPHIES):
+                  v = int(stats.get(key, 0)); rk = rank_of(v, th); col = COLORS[rk]; locked = rk == "LOCKED"
+                  cx = x0 + (i % 6) * (CW + GAP); cy = 26 + (i // 6) * (CH + 14)
+                  nxt = next((t for t in th if t > v), None)
+                  if nxt is None: frac, prog = 1.0, "MAX"
+                  else:
+                      lo = 0 if locked else th[RANKS.index(rk)]
+                      frac, prog = max(0.0, min(1.0, (v - lo) / (nxt - lo))), f"{fmt(v)} / {fmt(nxt)}"
+                  glow = "" if rk in ("LOCKED", "C", "B") else f'<circle class="glow" cx="64" cy="70" r="46" fill="url(#r{rk})" style="animation-delay:{i*.3:.1f}s"/>'
+                  shine = "" if locked else f'<g clip-path="url(#cup)"><rect class="shine" x="-40" y="-4" width="14" height="70" fill="#fff" opacity=".55" transform="skewX(-20)" style="animation-delay:{i*.45:.2f}s"/></g>'
+                  fill = "#16305A" if locked else f"url(#g{rk})"
+                  stroke = "#2B4A7A" if locked else shade(col, -.25)
+                  cup = f'''<g class="{'cup' if locked else 'cup float'}" style="animation-delay:{i*.35:.2f}s" transform="translate(64,46)">
+            <g class="cupbody" opacity="{.75 if locked else 1}">
+              <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="{fill}" stroke="{stroke}" stroke-width="1.4"/>
+              <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="{'#2B4A7A' if locked else col}" stroke-width="3" stroke-linecap="round"/>
+              <rect x="-3.5" y="39" width="7" height="10" fill="{fill}" stroke="{stroke}" stroke-width="1.2"/>
+              <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="{fill}" stroke="{stroke}" stroke-width="1.2"/>
+              <rect x="-11" y="55" width="22" height="4" rx="2" fill="{fill}" stroke="{stroke}" stroke-width="1.2"/>
+              <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="{.35 if locked else .5}"/>
+              {shine}
+            </g>
+          </g>'''
+                  lock = '<g transform="translate(64,62)"><rect x="-8" y="0" width="16" height="12" rx="2.5" fill="#0A192F" stroke="#4A6FA8" stroke-width="1.2"/><path d="M-4.5 0V-4A4.5 4.5 0 0 1 4.5 -4V0" fill="none" stroke="#4A6FA8" stroke-width="1.6"/></g>' if locked else ""
+                  cards += f'''<g transform="translate({cx},{cy})"><g class="card" style="animation-delay:{i*.09:.2f}s">
+            <rect width="{CW}" height="{CH}" rx="12" fill="#0D2140" stroke="{col}" stroke-opacity="{.25 if locked else .55}"/>
+            <rect x="42" y="12" width="44" height="17" rx="8.5" fill="{col}" fill-opacity="{.10 if locked else .16}" stroke="{col}" stroke-opacity=".6"/>
+            <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="{'#7F9BC7' if locked else col}">{'LOCKED' if locked else rk}</text>
+            {glow}{cup}{lock}
+            <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">{title}</text>
+            <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="{'#8FA3BF' if locked else col}">{fmt(v)}</text>
+            <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+            <rect x="24" y="152" width="{80*frac:.1f}" height="4" rx="2" fill="{col}"/>
+            <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">{prog}</text>
+          </g></g>'''
+              legend = ""
+              order = ["LOCKED"] + RANKS
+              lx = W / 2 - 300
+              for j, name in enumerate(order):
+                  c = COLORS[name]
+                  legend += f'<circle cx="{lx + j*66 + 8:.0f}" cy="{H-24}" r="5" fill="{c}"/><text x="{lx + j*66 + 18:.0f}" y="{H-20.5}" class="mono" font-size="10.5" fill="#8FA3BF">{"?" if name=="LOCKED" else name}</text>'
+              return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="GitHub trophies for {USER}">
+          <title>GitHub trophies — {USER}</title>
+          <defs>{grads}
+          <clipPath id="cup"><path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z"/></clipPath>
+          <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#64B5F6" opacity=".14"/></pattern></defs>
+          <style>
+          .sans{{font-family:"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif}}
+          .mono{{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,"Courier New",monospace}}
+          .card{{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}}
+          @keyframes rise{{from{{opacity:0;transform:translateY(18px)}}to{{opacity:1;transform:translateY(0)}}}}
+          .float{{animation:float 4.2s ease-in-out infinite}}
+          @keyframes float{{0%,100%{{transform:translate(64px,46px)}}50%{{transform:translate(64px,42px)}}}}
+          .glow{{animation:pulse 3.6s ease-in-out infinite}}
+          @keyframes pulse{{0%,100%{{opacity:.45}}50%{{opacity:1}}}}
+          .shine{{animation:shine 5s ease-in-out infinite}}
+          @keyframes shine{{0%,55%{{transform:skewX(-20deg) translateX(0)}}100%{{transform:skewX(-20deg) translateX(90px)}}}}
+          @media (prefers-reduced-motion:reduce){{*{{animation:none!important}}}}
+          </style>
+          <rect width="{W}" height="{H}" rx="18" fill="#0A192F" stroke="#1E3A8A"/>
+          <rect width="{W}" height="{H}" rx="18" fill="url(#dots)"/>
+          {cards}
+          <g>{legend}</g>
+          </svg>'''
+
+          if __name__ == "__main__":
+              if os.environ.get("TROPHY_SAMPLE"):
+                  stats = SAMPLE
+              else:
+                  try:
+                      stats = fetch_stats()
+                  except Exception as e:
+                      print("Could not read GitHub data, drawing an empty trophy room:", e, file=sys.stderr)
+                      stats = {}
+              os.makedirs(os.path.dirname(OUT) or ".", exist_ok=True)
+              open(OUT, "w", encoding="utf-8").write(build(stats))
+              li_out = os.environ.get("LI_OUT", os.path.join(os.path.dirname(OUT) or ".", "linkedin.svg"))
+              open(li_out, "w", encoding="utf-8").write(LINKEDIN_BADGE)
+              print("wrote", OUT, "and", li_out, {k: stats.get(k, 0) for k, _, _ in TROPHIES})
+          PYEOF
 
       # Commit generated SVG files
       - name: Commit generated profile cards
@@ -65,4 +282,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile/*.svg
           git commit -m "Update profile cards" || exit 0
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
           git push
