@@ -73,7 +73,7 @@
 ### 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="./profile/trophy.svg?v=1" alt="GitHub Trophies" width="95%"/>
+  <img src="./profile/trophy.svg?v=2" alt="GitHub Trophies" width="95%"/>
 </p>
 
 <br/><br/>
