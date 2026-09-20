@@ -50,11 +50,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-       # 🏆 Navy Blue GitHub Trophies
+             # 🏆 Premium Navy GitHub Achievements
       - name: Generate GitHub Trophies
         uses: soulteary/github-profile-trophy-action@v1.0.0
         with:
-          options: "username=arsalancodehub-prog&theme=dark_dimmed&no-frame=true&no-bg=true&column=6&margin-w=12&margin-h=12"
+          options: "username=arsalancodehub-prog&theme=darkhub&no-bg=true&no-frame=true&column=6&margin-w=18&margin-h=10&rank=SSS,SS, S,AAA,AA,A,B"
           path: profile/trophy.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
