@@ -157,20 +157,20 @@ jobs:
           RANKS = ["C", "B", "A", "AA", "AAA", "S", "SS", "SSS"]
           COLORS = {"SSS": "#FFC24D", "SS": "#FFDE94", "S": "#EAF8FF", "AAA": "#A8F0FF", "AA": "#7FE0FF",
                     "A": "#64B5F6", "B": "#6E9BE0", "C": "#8398BC", "LOCKED": "#3A5A8C"}
-          #            key          title            thresholds for C,B,A,AA,AAA,S,SS,SSS
+          #            key          title            thresholds for C,B,A,AA,AAA,S,SS,SSS  (beginner-friendly scale)
           TROPHIES = [
-              ("stars",      "Stars",          [1, 3, 10, 30, 100, 300, 1000, 3000]),
-              ("commits",    "Commits",        [1, 50, 150, 300, 500, 1000, 2500, 5000]),
-              ("followers",  "Followers",      [1, 5, 10, 20, 50, 100, 300, 1000]),
-              ("issues",     "Issues",         [1, 5, 10, 25, 50, 100, 250, 500]),
-              ("prs",        "Pull Requests",  [1, 5, 10, 25, 50, 100, 250, 500]),
-              ("repos",      "Repositories",   [1, 5, 10, 20, 30, 50, 80, 100]),
-              ("reviews",    "Reviews",        [1, 5, 10, 25, 50, 100, 250, 500]),
-              ("experience", "Experience",     [1, 2, 3, 5, 7, 9, 10, 12]),
+              ("stars",      "Stars",          [1, 2, 3, 5, 10, 20, 40, 100]),
+              ("commits",    "Commits",        [1, 10, 25, 40, 60, 80, 100, 150]),
+              ("followers",  "Followers",      [1, 3, 5, 10, 20, 30, 50, 100]),
+              ("issues",     "Issues",         [1, 2, 5, 10, 15, 25, 40, 60]),
+              ("prs",        "Pull Requests",  [1, 2, 5, 10, 15, 25, 40, 60]),
+              ("repos",      "Repositories",   [1, 2, 3, 5, 8, 10, 15, 20]),
+              ("reviews",    "Reviews",        [1, 2, 5, 10, 15, 25, 40, 60]),
+              ("experience", "Experience",     [1, 2, 3, 4, 5, 6, 8, 10]),
               ("orgs",       "Organizations",  [1, 2, 3, 4, 5, 6, 8, 10]),
-              ("gists",      "Gists",          [1, 5, 10, 20, 50, 100, 200, 500]),
-              ("languages",  "Languages",      [1, 2, 3, 4, 5, 7, 10, 15]),
-              ("contribs",   "Contributions",  [1, 100, 300, 600, 1000, 2000, 4000, 8000]),
+              ("gists",      "Gists",          [1, 2, 3, 5, 8, 10, 15, 20]),
+              ("languages",  "Languages",      [1, 2, 3, 4, 5, 6, 8, 10]),
+              ("contribs",   "Contributions",  [1, 25, 50, 80, 120, 200, 350, 500]),
           ]
 
           def rank_of(value, th):
