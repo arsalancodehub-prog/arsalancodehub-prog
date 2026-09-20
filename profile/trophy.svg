@@ -1,90 +1,263 @@
-
-    <svg
-      width="750"
-      height="110"
-      viewBox="0 0 750 110"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      
-        <svg
-          x="0"
-          y="0"
-          width="110"
-          height="110"
-          viewBox="0 0 110 110"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="0.5"
-            y="0.5"
-            rx="4.5"
-            width="109"
-            height="109"
-            stroke="#e1e4e8"
-            fill="#0d1117"
-            stroke-opacity="0"
-            fill-opacity="0"
-          />
-          
-  
-  
-  <defs>
-    <linearGradient id="B" gradientTransform="rotate(45)">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" aria-label="GitHub trophies for arsalancodehub-prog">
+<title>GitHub trophies — arsalancodehub-prog</title>
+<defs><linearGradient id="gSSS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE3AE"/><stop offset=".5" stop-color="#FFC24D"/><stop offset="1" stop-color="#A57E32"/></linearGradient><radialGradient id="rSSS"><stop offset="0" stop-color="#FFC24D" stop-opacity=".55"/><stop offset="1" stop-color="#FFC24D" stop-opacity="0"/></radialGradient><linearGradient id="gSS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF0CE"/><stop offset=".5" stop-color="#FFDE94"/><stop offset="1" stop-color="#A59060"/></linearGradient><radialGradient id="rSS"><stop offset="0" stop-color="#FFDE94" stop-opacity=".55"/><stop offset="1" stop-color="#FFDE94" stop-opacity="0"/></radialGradient><linearGradient id="gS" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5FBFF"/><stop offset=".5" stop-color="#EAF8FF"/><stop offset="1" stop-color="#98A1A5"/></linearGradient><radialGradient id="rS"><stop offset="0" stop-color="#EAF8FF" stop-opacity=".55"/><stop offset="1" stop-color="#EAF8FF" stop-opacity="0"/></radialGradient><linearGradient id="gAAA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D7F8FF"/><stop offset=".5" stop-color="#A8F0FF"/><stop offset="1" stop-color="#6D9CA5"/></linearGradient><radialGradient id="rAAA"><stop offset="0" stop-color="#A8F0FF" stop-opacity=".55"/><stop offset="1" stop-color="#A8F0FF" stop-opacity="0"/></radialGradient><linearGradient id="gAA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C5F1FF"/><stop offset=".5" stop-color="#7FE0FF"/><stop offset="1" stop-color="#5291A5"/></linearGradient><radialGradient id="rAA"><stop offset="0" stop-color="#7FE0FF" stop-opacity=".55"/><stop offset="1" stop-color="#7FE0FF" stop-opacity="0"/></radialGradient><linearGradient id="gA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9DDFA"/><stop offset=".5" stop-color="#64B5F6"/><stop offset="1" stop-color="#41759F"/></linearGradient><radialGradient id="rA"><stop offset="0" stop-color="#64B5F6" stop-opacity=".55"/><stop offset="1" stop-color="#64B5F6" stop-opacity="0"/></radialGradient><linearGradient id="gB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BDD2F1"/><stop offset=".5" stop-color="#6E9BE0"/><stop offset="1" stop-color="#476491"/></linearGradient><radialGradient id="rB"><stop offset="0" stop-color="#6E9BE0" stop-opacity=".55"/><stop offset="1" stop-color="#6E9BE0" stop-opacity="0"/></radialGradient><linearGradient id="gC" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C7D0E0"/><stop offset=".5" stop-color="#8398BC"/><stop offset="1" stop-color="#55627A"/></linearGradient><radialGradient id="rC"><stop offset="0" stop-color="#8398BC" stop-opacity=".55"/><stop offset="1" stop-color="#8398BC" stop-opacity="0"/></radialGradient><linearGradient id="gLOCKED" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A6B4CB"/><stop offset=".5" stop-color="#3A5A8C"/><stop offset="1" stop-color="#253A5B"/></linearGradient><radialGradient id="rLOCKED"><stop offset="0" stop-color="#3A5A8C" stop-opacity=".55"/><stop offset="1" stop-color="#3A5A8C" stop-opacity="0"/></radialGradient>
+<clipPath id="cup"><path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z"/></clipPath>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#64B5F6" opacity=".14"/></pattern></defs>
+<style>
+.sans{font-family:"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif}
+.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,"Courier New",monospace}
+.card{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.float{animation:float 4.2s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translate(64px,46px)}50%{transform:translate(64px,42px)}}
+.glow{animation:pulse 3.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:.45}50%{opacity:1}}
+.shine{animation:shine 5s ease-in-out infinite}
+@keyframes shine{0%,55%{transform:skewX(-20deg) translateX(0)}100%{transform:skewX(-20deg) translateX(90px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect width="900" height="440" rx="18" fill="#0A192F" stroke="#1E3A8A"/>
+<rect width="900" height="440" rx="18" fill="url(#dots)"/>
+<g transform="translate(36,26)"><g class="card" style="animation-delay:0.00s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#3A5A8C" stroke-opacity="0.25"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#3A5A8C" fill-opacity="0.1" stroke="#3A5A8C" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#7F9BC7">LOCKED</text>
+  <g class="cup" style="animation-delay:0.00s" transform="translate(64,46)">
+  <g class="cupbody" opacity="0.75">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="#16305A" stroke="#2B4A7A" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#2B4A7A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.35"/>
     
-    <stop offset="0%" stop-color="#ff5555"/>
-    <stop offset="70%" stop-color="#ff5555"/>
-    <stop offset="100%" stop-color="#ff5555"/>
+  </g>
+</g><g transform="translate(64,62)"><rect x="-8" y="0" width="16" height="12" rx="2.5" fill="#0A192F" stroke="#4A6FA8" stroke-width="1.2"/><path d="M-4.5 0V-4A4.5 4.5 0 0 1 4.5 -4V0" fill="none" stroke="#4A6FA8" stroke-width="1.6"/></g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Stars</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8FA3BF">0</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#3A5A8C"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">0 / 1</text>
+</g></g><g transform="translate(176,26)"><g class="card" style="animation-delay:0.09s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#6E9BE0" stroke-opacity="0.55"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#6E9BE0" fill-opacity="0.16" stroke="#6E9BE0" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#6E9BE0">B</text>
+  <g class="cup float" style="animation-delay:0.35s" transform="translate(64,46)">
+  <g class="cupbody" opacity="1">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="url(#gB)" stroke="#5274A8" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#6E9BE0" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="url(#gB)" stroke="#5274A8" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="url(#gB)" stroke="#5274A8" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="url(#gB)" stroke="#5274A8" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.5"/>
+    <g clip-path="url(#cup)"><rect class="shine" x="-40" y="-4" width="14" height="70" fill="#fff" opacity=".55" transform="skewX(-20)" style="animation-delay:0.45s"/></g>
+  </g>
+</g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Commits</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#6E9BE0">66</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="12.8" height="4" rx="2" fill="#6E9BE0"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">66 / 150</text>
+</g></g><g transform="translate(316,26)"><g class="card" style="animation-delay:0.18s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#8398BC" stroke-opacity="0.55"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#8398BC" fill-opacity="0.16" stroke="#8398BC" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#8398BC">C</text>
+  <g class="cup float" style="animation-delay:0.70s" transform="translate(64,46)">
+  <g class="cupbody" opacity="1">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="url(#gC)" stroke="#62728D" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#8398BC" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.5"/>
+    <g clip-path="url(#cup)"><rect class="shine" x="-40" y="-4" width="14" height="70" fill="#fff" opacity=".55" transform="skewX(-20)" style="animation-delay:0.90s"/></g>
+  </g>
+</g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Followers</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8398BC">1</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#8398BC"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">1 / 5</text>
+</g></g><g transform="translate(456,26)"><g class="card" style="animation-delay:0.27s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#3A5A8C" stroke-opacity="0.25"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#3A5A8C" fill-opacity="0.1" stroke="#3A5A8C" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#7F9BC7">LOCKED</text>
+  <g class="cup" style="animation-delay:1.05s" transform="translate(64,46)">
+  <g class="cupbody" opacity="0.75">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="#16305A" stroke="#2B4A7A" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#2B4A7A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.35"/>
     
-    </linearGradient>
-  </defs>
-  <svg x="28" y="20" width="100" height="100" viewBox="0 0 30 30" fill="url(#B)" xmlns="http://www.w3.org/2000/svg">
+  </g>
+</g><g transform="translate(64,62)"><rect x="-8" y="0" width="16" height="12" rx="2.5" fill="#0A192F" stroke="#4A6FA8" stroke-width="1.2"/><path d="M-4.5 0V-4A4.5 4.5 0 0 1 4.5 -4V0" fill="none" stroke="#4A6FA8" stroke-width="1.6"/></g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Issues</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8FA3BF">0</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#3A5A8C"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">0 / 1</text>
+</g></g><g transform="translate(596,26)"><g class="card" style="animation-delay:0.36s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#3A5A8C" stroke-opacity="0.25"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#3A5A8C" fill-opacity="0.1" stroke="#3A5A8C" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#7F9BC7">LOCKED</text>
+  <g class="cup" style="animation-delay:1.40s" transform="translate(64,46)">
+  <g class="cupbody" opacity="0.75">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="#16305A" stroke="#2B4A7A" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#2B4A7A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.35"/>
     
-    <path d="M7 10h2v4H7v-4z"/>
-    <path d="M10 11c0 .552-.895 1-2 1s-2-.448-2-1 .895-1 2-1 2 .448 2 1z"/>
-    <path fill-rule="evenodd" d="M12.5 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm-6-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-3 2a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/>
-    <path d="M3 1h10c-.495 3.467-.5 10-5 10S3.495 4.467 3 1zm0 15a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1H3zm2-1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H5z"/>
-    <circle cx="8" cy="6" r="4" fill="#f0f6fb" />
-    <text x="6" y="8" font-family="Courier, Monospace" font-size="7" fill="#0d1117">B</text>
-  
-  </svg>
-  
-          <text x="50%" y="18" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="13" fill="#c9d1d9">Commits</text>
-          <text x="50%" y="85" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10.5" fill="#8b949e">Middle Committer</text>
-          <text x="50%" y="97" text-anchor="middle" font-family="Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji" font-weight="bold" font-size="10" fill="#8b949e">64pt</text>
-          
-    <style>
-    @keyframes CommitsRankAnimation {
-      from {
-        width: 0px;
-      }
-      to {
-        width: 48.00px;
-      }
-    }
-    #Commits-rank-progress{
-      animation: CommitsRankAnimation 1s forwards ease-in-out;
-    }
-    </style>
-    <rect
-      x="15"
-      y="101"
-      rx="1"
-      width="80"
-      height="3.2"
-      opacity="0.3"
-      fill="#ff79c6"
-    />
-    <rect
-      id="Commits-rank-progress"
-      x="15"
-      y="101"
-      rx="1"
-      height="3.2"
-      fill="#ff79c6"
-    />
-  
-        </svg>
-        
-    </svg>
+  </g>
+</g><g transform="translate(64,62)"><rect x="-8" y="0" width="16" height="12" rx="2.5" fill="#0A192F" stroke="#4A6FA8" stroke-width="1.2"/><path d="M-4.5 0V-4A4.5 4.5 0 0 1 4.5 -4V0" fill="none" stroke="#4A6FA8" stroke-width="1.6"/></g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Pull Requests</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8FA3BF">0</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#3A5A8C"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">0 / 1</text>
+</g></g><g transform="translate(736,26)"><g class="card" style="animation-delay:0.45s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#8398BC" stroke-opacity="0.55"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#8398BC" fill-opacity="0.16" stroke="#8398BC" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#8398BC">C</text>
+  <g class="cup float" style="animation-delay:1.75s" transform="translate(64,46)">
+  <g class="cupbody" opacity="1">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="url(#gC)" stroke="#62728D" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#8398BC" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.5"/>
+    <g clip-path="url(#cup)"><rect class="shine" x="-40" y="-4" width="14" height="70" fill="#fff" opacity=".55" transform="skewX(-20)" style="animation-delay:2.25s"/></g>
+  </g>
+</g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Repositories</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8398BC">2</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="20.0" height="4" rx="2" fill="#8398BC"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">2 / 5</text>
+</g></g><g transform="translate(36,216)"><g class="card" style="animation-delay:0.54s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#3A5A8C" stroke-opacity="0.25"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#3A5A8C" fill-opacity="0.1" stroke="#3A5A8C" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#7F9BC7">LOCKED</text>
+  <g class="cup" style="animation-delay:2.10s" transform="translate(64,46)">
+  <g class="cupbody" opacity="0.75">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="#16305A" stroke="#2B4A7A" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#2B4A7A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.35"/>
+    
+  </g>
+</g><g transform="translate(64,62)"><rect x="-8" y="0" width="16" height="12" rx="2.5" fill="#0A192F" stroke="#4A6FA8" stroke-width="1.2"/><path d="M-4.5 0V-4A4.5 4.5 0 0 1 4.5 -4V0" fill="none" stroke="#4A6FA8" stroke-width="1.6"/></g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Reviews</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8FA3BF">0</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#3A5A8C"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">0 / 1</text>
+</g></g><g transform="translate(176,216)"><g class="card" style="animation-delay:0.63s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#3A5A8C" stroke-opacity="0.25"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#3A5A8C" fill-opacity="0.1" stroke="#3A5A8C" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#7F9BC7">LOCKED</text>
+  <g class="cup" style="animation-delay:2.45s" transform="translate(64,46)">
+  <g class="cupbody" opacity="0.75">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="#16305A" stroke="#2B4A7A" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#2B4A7A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.35"/>
+    
+  </g>
+</g><g transform="translate(64,62)"><rect x="-8" y="0" width="16" height="12" rx="2.5" fill="#0A192F" stroke="#4A6FA8" stroke-width="1.2"/><path d="M-4.5 0V-4A4.5 4.5 0 0 1 4.5 -4V0" fill="none" stroke="#4A6FA8" stroke-width="1.6"/></g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Experience</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8FA3BF">0</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#3A5A8C"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">0 / 1</text>
+</g></g><g transform="translate(316,216)"><g class="card" style="animation-delay:0.72s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#3A5A8C" stroke-opacity="0.25"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#3A5A8C" fill-opacity="0.1" stroke="#3A5A8C" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#7F9BC7">LOCKED</text>
+  <g class="cup" style="animation-delay:2.80s" transform="translate(64,46)">
+  <g class="cupbody" opacity="0.75">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="#16305A" stroke="#2B4A7A" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#2B4A7A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.35"/>
+    
+  </g>
+</g><g transform="translate(64,62)"><rect x="-8" y="0" width="16" height="12" rx="2.5" fill="#0A192F" stroke="#4A6FA8" stroke-width="1.2"/><path d="M-4.5 0V-4A4.5 4.5 0 0 1 4.5 -4V0" fill="none" stroke="#4A6FA8" stroke-width="1.6"/></g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Organizations</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8FA3BF">0</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#3A5A8C"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">0 / 1</text>
+</g></g><g transform="translate(456,216)"><g class="card" style="animation-delay:0.81s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#3A5A8C" stroke-opacity="0.25"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#3A5A8C" fill-opacity="0.1" stroke="#3A5A8C" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#7F9BC7">LOCKED</text>
+  <g class="cup" style="animation-delay:3.15s" transform="translate(64,46)">
+  <g class="cupbody" opacity="0.75">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="#16305A" stroke="#2B4A7A" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#2B4A7A" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="#16305A" stroke="#2B4A7A" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.35"/>
+    
+  </g>
+</g><g transform="translate(64,62)"><rect x="-8" y="0" width="16" height="12" rx="2.5" fill="#0A192F" stroke="#4A6FA8" stroke-width="1.2"/><path d="M-4.5 0V-4A4.5 4.5 0 0 1 4.5 -4V0" fill="none" stroke="#4A6FA8" stroke-width="1.6"/></g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Gists</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8FA3BF">0</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#3A5A8C"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">0 / 1</text>
+</g></g><g transform="translate(596,216)"><g class="card" style="animation-delay:0.90s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#8398BC" stroke-opacity="0.55"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#8398BC" fill-opacity="0.16" stroke="#8398BC" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#8398BC">C</text>
+  <g class="cup float" style="animation-delay:3.50s" transform="translate(64,46)">
+  <g class="cupbody" opacity="1">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="url(#gC)" stroke="#62728D" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#8398BC" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.5"/>
+    <g clip-path="url(#cup)"><rect class="shine" x="-40" y="-4" width="14" height="70" fill="#fff" opacity=".55" transform="skewX(-20)" style="animation-delay:4.50s"/></g>
+  </g>
+</g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Languages</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8398BC">1</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="0.0" height="4" rx="2" fill="#8398BC"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">1 / 2</text>
+</g></g><g transform="translate(736,216)"><g class="card" style="animation-delay:0.99s">
+  <rect width="128" height="176" rx="12" fill="#0D2140" stroke="#8398BC" stroke-opacity="0.55"/>
+  <rect x="42" y="12" width="44" height="17" rx="8.5" fill="#8398BC" fill-opacity="0.16" stroke="#8398BC" stroke-opacity=".6"/>
+  <text x="64" y="24.6" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#8398BC">C</text>
+  <g class="cup float" style="animation-delay:3.85s" transform="translate(64,46)">
+  <g class="cupbody" opacity="1">
+    <path d="M-21 0H21V14C21 31 10 39 0 39C-10 39-21 31-21 14Z" fill="url(#gC)" stroke="#62728D" stroke-width="1.4"/>
+    <path d="M-21 6H-29C-34 6 -33 23 -22 25M21 6H29C34 6 33 23 22 25" fill="none" stroke="#8398BC" stroke-width="3" stroke-linecap="round"/>
+    <rect x="-3.5" y="39" width="7" height="10" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <rect x="-15" y="49" width="30" height="6" rx="2.5" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <rect x="-11" y="55" width="22" height="4" rx="2" fill="url(#gC)" stroke="#62728D" stroke-width="1.2"/>
+    <path d="M0 8L2.6 13.4L8.5 14.2L4.2 18.3L5.3 24.2L0 21.4L-5.3 24.2L-4.2 18.3L-8.5 14.2L-2.6 13.4Z" fill="#0A192F" opacity="0.5"/>
+    <g clip-path="url(#cup)"><rect class="shine" x="-40" y="-4" width="14" height="70" fill="#fff" opacity=".55" transform="skewX(-20)" style="animation-delay:4.95s"/></g>
+  </g>
+</g>
+  <text x="64" y="125" text-anchor="middle" class="sans" font-size="12" font-weight="700" fill="#E8F1FF">Contributions</text>
+  <text x="64" y="144" text-anchor="middle" class="sans" font-size="16" font-weight="800" fill="#8398BC">69</text>
+  <rect x="24" y="152" width="80" height="4" rx="2" fill="#16305A"/>
+  <rect x="24" y="152" width="54.9" height="4" rx="2" fill="#8398BC"/>
+  <text x="64" y="171" text-anchor="middle" class="mono" font-size="9.5" fill="#8FA3BF">69 / 100</text>
+</g></g>
+<g><circle cx="158" cy="416" r="5" fill="#3A5A8C"/><text x="168" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">?</text><circle cx="224" cy="416" r="5" fill="#8398BC"/><text x="234" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">C</text><circle cx="290" cy="416" r="5" fill="#6E9BE0"/><text x="300" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">B</text><circle cx="356" cy="416" r="5" fill="#64B5F6"/><text x="366" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">A</text><circle cx="422" cy="416" r="5" fill="#7FE0FF"/><text x="432" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">AA</text><circle cx="488" cy="416" r="5" fill="#A8F0FF"/><text x="498" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">AAA</text><circle cx="554" cy="416" r="5" fill="#EAF8FF"/><text x="564" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">S</text><circle cx="620" cy="416" r="5" fill="#FFDE94"/><text x="630" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">SS</text><circle cx="686" cy="416" r="5" fill="#FFC24D"/><text x="696" y="419.5" class="mono" font-size="10.5" fill="#8FA3BF">SSS</text></g>
+</svg>
