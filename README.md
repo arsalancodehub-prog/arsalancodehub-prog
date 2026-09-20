@@ -25,7 +25,7 @@
 ### 🛠️ Tech I Know
 
 ![HTML5](https://img.shields.io/badge/HTML5-0a192f?style=for-the-badge&logo=html5&logoColor=64b5f6)
-![CSS3](https://img.shields.io/badge/CSS3-0a192f?style=for-the-badge&logo=css3&logoColor=64b5f6)
+![CSS3](https://img.shields.io/badge/CSS3-0a192f?style=for-the-badge&logo=css&logoColor=64b5f6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0a192f?style=for-the-badge&logo=javascript&logoColor=64b5f6)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0a192f?style=for-the-badge&logo=typescript&logoColor=64b5f6)
 ![React](https://img.shields.io/badge/React-0a192f?style=for-the-badge&logo=react&logoColor=64b5f6)
