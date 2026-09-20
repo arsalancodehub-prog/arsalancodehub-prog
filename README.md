@@ -93,21 +93,19 @@
 
 ### 📫 Let's Connect
 
-<a href="https://www.linkedin.com/in/arsalanofficial">
-<img src="https://img.shields.io/badge/LinkedIn-0a192f?style=for-the-badge&logo=linkedin&logoColor=64b5f6" alt="LinkedIn"/>
-</a>
+<p align="center">
+  <a href="https://www.linkedin.com/in/arsalanofficial">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
 
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=arsalandzn@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-0a192f?style=for-the-badge&logo=gmail&logoColor=64b5f6" alt="Gmail"/>
-</a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arsalandzn@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-0a192f?style=for-the-badge&logo=gmail&logoColor=64b5f6" alt="Gmail"/>
+  </a>
 
-<a href="https://www.instagram.com/arsalan_khan.799/">
-<img src="https://img.shields.io/badge/Instagram-0a192f?style=for-the-badge&logo=instagram&logoColor=64b5f6" alt="Instagram"/>
-</a>
-
-<a href="https://www.behance.net/arsalankhan262">
-<img src="https://img.shields.io/badge/Behance-0a192f?style=for-the-badge&logo=behance&logoColor=64b5f6" alt="Behance"/>
-</a>
+  <a href="https://www.instagram.com/arsalan_khan.799/">
+    <img src="https://img.shields.io/badge/Instagram-0a192f?style=for-the-badge&logo=instagram&logoColor=64b5f6" alt="Instagram"/>
+  </a>
+</p>
 
 <br/><br/>
 
