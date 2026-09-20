@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/0934cdd9fb5c439a76658d335424dca0d97c7a58/Gemini_Generated_Image_y0v1bdy0v1bdy0v1%20(1).jpg" width="100%" />
+  <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/3687904ba8c42049aac329116fec497189d1a8f4/banner.svg" />
 </p>
 </p>
 <h1 align="center">Hi there, I'm Arsalan Khan 👋</h1>
