@@ -1,0 +1,68 @@
+name: Generate Profile Cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  profile-cards:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # GitHub Stats
+      - name: Generate GitHub Stats
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=arsalancodehub-prog&show_icons=true&hide_border=true&bg_color=0a192f&title_color=64b5f6&icon_color=64b5f6&text_color=e8f1ff
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Top Languages
+      - name: Generate Top Languages
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=arsalancodehub-prog&layout=compact&langs_count=6&hide_border=true&bg_color=0a192f&title_color=64b5f6&text_color=e8f1ff
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Contribution Overview
+      - name: Generate Contribution Overview
+        uses: cicirello/user-statistician@v1
+        with:
+          image-file: profile/contributions.svg
+          include-title: true
+          custom-title: Arsalan Khan — GitHub Contributions
+          colors: "#0a192f #1e3a8a #64b5f6 #e8f1ff #e8f1ff"
+          hide-keys: general,repositories,languages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # GitHub Trophies
+      - name: Generate GitHub Trophies
+        uses: soulteary/github-profile-trophy-action@v1.0.0
+        with:
+          options: "username=arsalancodehub-prog&theme=onedark&no-frame=true&column=6"
+          path: profile/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Commit generated SVG files
+      - name: Commit generated profile cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update profile cards" || exit 0
+          git push
