@@ -1,14 +1,19 @@
 <p align="center">
-  <img src="./banner.svg?v=4" alt="Arsalan Khan — Full Stack Developer" width="100%"/>
+  <img src="./banner.svg?v=5" alt="Arsalan Khan — Full Stack Developer" width="100%"/>
 </p>
 
-<table>
+<br/>
+
+<table align="center" border="0">
 <tr>
-<td width="34%" valign="top" align="center">
-  <img src="./idcard%20(2).svg" alt="Arsalan Khan ID Card"/>
+
+<td width="34%" align="center" valign="middle">
+
+<img src="./idcard%20(2).svg" alt="Arsalan Khan ID Card" width="330"/>
+
 </td>
 
-<td valign="top">
+<td width="66%" valign="middle">
 
 ### 💙 About Me
 
@@ -32,78 +37,82 @@
 ### 🚀 Projects
 
 | Project | Tech | Status |
-| ------- | ---- | ------ |
-| [📚 Assignments](https://github.com/arsalancodehub-prog/Assignments) | `HTML` | Done |
-| 🌐 Portfolio Website | `HTML` `CSS` `JS` | Coming soon |
-| ⚛️ React App | `React` | Coming soon |
+|:---|:---:|:---:|
+| [📚 Assignments](https://github.com/arsalancodehub-prog/Assignments) | `HTML` | ✅ Done |
+| 🌐 Portfolio Website | `HTML` `CSS` `JS` | 🔨 Coming Soon |
+| ⚛️ React App | `React` | 🔨 Coming Soon |
 
 > 💙 *"Code is my art, logic is my superpower."*
 
 </td>
+
 </tr>
 </table>
 
 ---
 
+<div align="center">
+
 ### 📊 GitHub Stats & Graphs
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=arsalancodehub-prog&show_icons=true&hide_border=true&bg_color=0a192f&title_color=64b5f6&icon_color=64b5f6&text_color=ffffff&cache_seconds=86400" height="180" alt="GitHub Stats" />
+<img src="./profile/stats.svg?v=1" alt="GitHub Stats" height="185"/>
+<img src="./profile/top-langs.svg?v=1" alt="Top Languages" height="185"/>
 
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalancodehub-prog&layout=compact&hide_border=true&bg_color=0a192f&title_color=64b5f6&text_color=ffffff&cache_seconds=86400" height="180" alt="Top Languages" />
-</p>
+<br/><br/>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=false&border=1e3a8a&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6&currStreakNum=e8f1ff&sideNums=e8f1ff&sideLabels=8fa3bf&dates=8fa3bf" alt="GitHub Streak"/>
-</p>
+<img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=false&border=1e3a8a&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6&currStreakNum=e8f1ff&sideNums=e8f1ff&sideLabels=8fa3bf&dates=8fa3bf" alt="GitHub Streak"/>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=arsalancodehub-prog&bg_color=0a192f&color=64b5f6&line=64b5f6&point=e8f1ff&area=true&area_color=1e3a8a&hide_border=true&custom_title=Contribution%20Graph" alt="Contribution Graph"/>
-</p>
+<br/><br/>
 
----
+### 📈 Contribution Overview
 
-### 🏆 Trophies
+<img src="./profile/contributions.svg?v=1" alt="GitHub Contribution Overview" width="95%"/>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=arsalancodehub-prog&theme=onedark&no-frame=true&row=1&column=6" alt="GitHub Trophies"/>
-</p>
+<br/><br/>
 
----
+### 🏆 GitHub Trophies
 
-### 🐍 Snake eating my contributions
+<img src="./profile/trophy.svg?v=1" alt="GitHub Trophies" width="95%"/>
 
-<p align="center">
-  <img
-    alt="Contribution snake: white boxes, navy blue shades for commits"
-    src="https://raw.githubusercontent.com/arsalancodehub-prog/arsalancodehub-prog/output/github-snake.svg"
-  />
-</p>
+<br/><br/>
 
-<p align="center">
-  <sub>White box = no commits &nbsp;·&nbsp; light blue = a few commits &nbsp;·&nbsp; dark navy = lots of code pushed 💙</sub>
-</p>
+### 🐍 Watch the Snake Eat My Contributions
 
----
+<img
+  src="https://raw.githubusercontent.com/arsalancodehub-prog/arsalancodehub-prog/output/github-snake.svg"
+  alt="Contribution Snake"
+/>
+
+<br/>
+
+<sub>White box = no commits &nbsp;·&nbsp; light blue = a few commits &nbsp;·&nbsp; dark navy = lots of code pushed 💙</sub>
+
+<br/><br/>
 
 ### 📫 Let's Connect
 
-<p align="center">
+<a href="https://www.linkedin.com/in/arsalanofficial">
+<img src="https://img.shields.io/badge/LinkedIn-0a192f?style=for-the-badge&logo=linkedin&logoColor=64b5f6" alt="LinkedIn"/>
+</a>
 
-  <a href="https://www.linkedin.com/in/arsalanofficial">
-    <img src="https://img.shields.io/badge/LinkedIn-0a192f?style=for-the-badge&logo=linkedin&logoColor=64b5f6" alt="LinkedIn"/>
-  </a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=arsalandzn@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-0a192f?style=for-the-badge&logo=gmail&logoColor=64b5f6" alt="Gmail"/>
+</a>
 
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arsalandzn@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-0a192f?style=for-the-badge&logo=gmail&logoColor=64b5f6" alt="Gmail"/>
-  </a>
+<a href="https://www.instagram.com/arsalan_khan.799/">
+<img src="https://img.shields.io/badge/Instagram-0a192f?style=for-the-badge&logo=instagram&logoColor=64b5f6" alt="Instagram"/>
+</a>
 
-  <a href="https://www.instagram.com/arsalan_khan.799/">
-    <img src="https://img.shields.io/badge/Instagram-0a192f?style=for-the-badge&logo=instagram&logoColor=64b5f6" alt="Instagram"/>
-  </a>
+<a href="https://www.behance.net/arsalankhan262">
+<img src="https://img.shields.io/badge/Behance-0a192f?style=for-the-badge&logo=behance&logoColor=64b5f6" alt="Behance"/>
+</a>
 
-  <a href="https://www.behance.net/arsalankhan262">
-    <img src="https://img.shields.io/badge/Behance-0a192f?style=for-the-badge&logo=behance&logoColor=64b5f6" alt="Behance"/>
-  </a>
+<br/><br/>
 
-</p>
+<img src="https://komarev.com/ghpvc/?username=arsalancodehub-prog&color=0a192f&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
+
+<br/><br/>
+
+*⭐ Always learning, always building.* 💙
+
+</div>
