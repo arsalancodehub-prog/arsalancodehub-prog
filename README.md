@@ -5,7 +5,7 @@
 <table>
 <tr>
 <td width="34%" valign="top" align="center">
-  <img src="./idcard.svg?v=1" alt="Arsalan Khan developer ID card" width="280"/>
+  <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/de11410d10d353c91072e23aa7016cf57b0a492d/idcard%20(2).svg"/>
 </td>
 <td valign="top">
 
