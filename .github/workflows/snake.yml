@@ -1,30 +1,46 @@
-name: Generate Snake Animation
+name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */12 * * *"   # every 12 hours
+  workflow_dispatch:          # lets you run it manually from the Actions tab
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [main]
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Generate Snake Animation
-        uses: Platane/snk@v3
+      # White boxes for "no commits", then light blue -> dark navy as you push more code
+      - name: Generate snake SVG from contributions
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: arsalancodehub-prog
+          github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=%23ffffff&color_dots=%23ffffff,%23dbeafe,%2360a5fa,%232563eb,%230a192f
+            dist/github-snake.svg?color_snake=%23F7FCFF&color_dots=%23FFFFFF,%23BFD0EC,%237C97C8,%2335558F,%230A192F&color_dot_border=%23CFDCF0
 
-      - name: Push Snake to output branch
-        uses: crazy-max/ghaction-github-pages@v4
+      # Turn the plain white snake into a crystal one (glassy gradient + blue edge)
+      - name: Make the snake crystal
+        run: |
+          python3 - <<'PY'
+          import re
+          p = "dist/github-snake.svg"
+          s = open(p, encoding="utf-8").read()
+          defs = ('<defs><linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1">'
+                  '<stop offset="0" stop-color="#FFFFFF"/>'
+                  '<stop offset=".55" stop-color="#EAF6FF"/>'
+                  '<stop offset="1" stop-color="#BFE3FF"/></linearGradient></defs>')
+          s = s.replace("</desc>", "</desc>" + defs, 1)
+          s = re.sub(r"--cb:[^;]+;", "--cb:#CFDCF0;", s, count=1)
+          s = s.replace("</style>", ".s{fill:url(#crystal);stroke:#4FA8F0;stroke-width:1.4px}</style>", 1)
+          open(p, "w", encoding="utf-8").write(s)
+          PY
+
+      - name: Push to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
