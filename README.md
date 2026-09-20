@@ -45,8 +45,9 @@
 ### 📊 GitHub Stats & Graphs
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=arsalancodehub-prog&show_icons=true&hide_border=false&border_color=1e3a8a&bg_color=0a192f&title_color=64b5f6&icon_color=64b5f6&text_color=e8f1ff&count_private=true" alt="GitHub stats"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalancodehub-prog&layout=compact&hide_border=false&border_color=1e3a8a&bg_color=0a192f&title_color=64b5f6&text_color=e8f1ff" alt="Top languages"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=arsalancodehub-prog&show_icons=true&hide_border=true&bg_color=0a192f&title_color=64b5f6&icon_color=64b5f6&text_color=ffffff&cache_seconds=86400" height="180" alt="GitHub Stats" />
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalancodehub-prog&layout=compact&hide_border=true&bg_color=0a192f&title_color=64b5f6&text_color=ffffff&cache_seconds=86400" height="180" alt="Top Languages" />
 </p>
 
 <p align="center">
@@ -60,9 +61,8 @@
 ### 🏆 Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=arsalancodehub-prog&theme=onedark&no-frame=true&row=1&column=6" alt="Trophies"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=arsalancodehub-prog&theme=onedark&no-frame=true&row=1&column=6" />
 </p>
-
 ### 🐍 Snake eating my contributions
 
 <p align="center">
