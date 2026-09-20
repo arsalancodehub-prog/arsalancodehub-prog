@@ -70,10 +70,10 @@
 
 <br/><br/>
 
-### 🏆 GitHub Trophies
+### 🏆 GitHub Achievements
 
 <p align="center">
-  <img src="./profile/trophy.svg?v=2" alt="GitHub Trophies" width="95%"/>
+  <img src="./profile/trophy.svg?v=3" alt="GitHub Achievements" width="90%"/>
 </p>
 
 <br/><br/>
