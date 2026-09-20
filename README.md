@@ -5,8 +5,9 @@
 <table>
 <tr>
 <td width="34%" valign="top" align="center">
-  <img src="https://github.com/arsalancodehub-prog/arsalancodehub-prog/blob/de11410d10d353c91072e23aa7016cf57b0a492d/idcard%20(2).svg"/>
+  <img src="./idcard%20(2).svg" alt="Arsalan Khan ID Card"/>
 </td>
+
 <td valign="top">
 
 ### 💙 About Me
@@ -42,6 +43,8 @@
 </tr>
 </table>
 
+---
+
 ### 📊 GitHub Stats & Graphs
 
 <p align="center">
@@ -51,37 +54,56 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=false&border=1e3a8a&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6&currStreakNum=e8f1ff&sideNums=e8f1ff&sideLabels=8fa3bf&dates=8fa3bf" alt="GitHub streak"/>
+  <img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=false&border=1e3a8a&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6&currStreakNum=e8f1ff&sideNums=e8f1ff&sideLabels=8fa3bf&dates=8fa3bf" alt="GitHub Streak"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=arsalancodehub-prog&bg_color=0a192f&color=64b5f6&line=64b5f6&point=e8f1ff&area=true&area_color=1e3a8a&hide_border=true&custom_title=Contribution%20Graph" alt="Contribution graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=arsalancodehub-prog&bg_color=0a192f&color=64b5f6&line=64b5f6&point=e8f1ff&area=true&area_color=1e3a8a&hide_border=true&custom_title=Contribution%20Graph" alt="Contribution Graph"/>
 </p>
+
+---
 
 ### 🏆 Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=arsalancodehub-prog&theme=onedark&no-frame=true&row=1&column=6" />
+  <img src="https://github-profile-trophy.vercel.app/?username=arsalancodehub-prog&theme=onedark&no-frame=true&row=1&column=6" alt="GitHub Trophies"/>
 </p>
+
+---
+
 ### 🐍 Snake eating my contributions
 
 <p align="center">
-  <img alt="Contribution snake: white boxes, navy blue shades for commits" src="https://raw.githubusercontent.com/arsalancodehub-prog/arsalancodehub-prog/output/github-snake.svg"/>
+  <img
+    alt="Contribution snake: white boxes, navy blue shades for commits"
+    src="https://raw.githubusercontent.com/arsalancodehub-prog/arsalancodehub-prog/output/github-snake.svg"
+  />
 </p>
 
-<p align="center"><sub>White box = no commits &nbsp;·&nbsp; light blue = a few commits &nbsp;·&nbsp; dark navy = lots of code pushed 💙</sub></p>
+<p align="center">
+  <sub>White box = no commits &nbsp;·&nbsp; light blue = a few commits &nbsp;·&nbsp; dark navy = lots of code pushed 💙</sub>
+</p>
+
+---
 
 ### 📫 Let's Connect
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/arsalanofficial"><img src="https://img.shields.io/badge/LinkedIn-0a192f?style=for-the-badge&logo=linkedin&logoColor=64b5f6" alt="LinkedIn"/></a>
-  <a href="mailto:arsalandzn@gmail.com"><img src="https://img.shields.io/badge/Gmail-0a192f?style=for-the-badge&logo=gmail&logoColor=64b5f6" alt="Gmail"/></a>
-  <a href="https://www.instagram.com/arsalan_khan.799/"><img src="https://img.shields.io/badge/Instagram-0a192f?style=for-the-badge&logo=instagram&logoColor=64b5f6" alt="Instagram"/></a>
-  <a href="https://www.behance.net/arsalankhan262"><img src="https://img.shields.io/badge/Behance-0a192f?style=for-the-badge&logo=behance&logoColor=64b5f6" alt="Behance"/></a>
-</p>
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=arsalancodehub-prog&label=Profile+Views&color=1e3a8a&style=flat" alt="Profile views"/>
-</p>
+  <a href="https://www.linkedin.com/in/arsalanofficial">
+    <img src="https://img.shields.io/badge/LinkedIn-0a192f?style=for-the-badge&logo=linkedin&logoColor=64b5f6" alt="LinkedIn"/>
+  </a>
 
-<p align="center"><i>⭐ Always learning, always building. 💙</i></p>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arsalandzn@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-0a192f?style=for-the-badge&logo=gmail&logoColor=64b5f6" alt="Gmail"/>
+  </a>
+
+  <a href="https://www.instagram.com/arsalan_khan.799/">
+    <img src="https://img.shields.io/badge/Instagram-0a192f?style=for-the-badge&logo=instagram&logoColor=64b5f6" alt="Instagram"/>
+  </a>
+
+  <a href="https://www.behance.net/arsalankhan262">
+    <img src="https://img.shields.io/badge/Behance-0a192f?style=for-the-badge&logo=behance&logoColor=64b5f6" alt="Behance"/>
+  </a>
+
+</p>
