@@ -55,11 +55,8 @@
   <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalancodehub-prog&layout=compact&hide_border=true&bg_color=0a192f&title_color=64b5f6&text_color=ffffff" />
 </p>
 
-### 🐍 Contribution Snake
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/arsalancodehub-prog/arsalancodehub-prog/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake" />
-</p>
+🐍 Snake eating my contributions
+<p align="center"> <img alt="Contribution snake: white boxes, navy blue shades for commits" src="https://raw.githubusercontent.com/arsalancodehub-prog/arsalancodehub-prog/output/github-snake.svg"/> </p> <p align="center"><sub>White box = no commits &nbsp;·&nbsp; light blue = a few commits &nbsp;·&nbsp; dark navy = lots of code pushed 💙</sub></p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=true&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6" />
