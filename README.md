@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner.svg?v=5" alt="Arsalan Khan — Full Stack Developer" width="100%"/>
+  <img src="./banner.svg?v=6" alt="Arsalan Khan — Full Stack Developer" width="100%"/>
 </p>
 
 <br/>
@@ -9,7 +9,7 @@
 
 <td width="34%" align="center" valign="middle">
 
-<img src="./idcard.svg?v=1" alt="Arsalan Khan ID Card" width="330"/>
+<img src="./idcard.svg?v=2" alt="Arsalan Khan ID Card" width="330"/>
 
 </td>
 
@@ -25,7 +25,7 @@
 ### 🛠️ Tech I Know
 
 ![HTML5](https://img.shields.io/badge/HTML5-0a192f?style=for-the-badge&logo=html5&logoColor=64b5f6)
-![CSS3](https://img.shields.io/badge/CSS3-0a192f?style=for-the-badge&logo=css&logoColor=64b5f6)
+![CSS3](https://img.shields.io/badge/CSS3-0a192f?style=for-the-badge&logo=css3&logoColor=64b5f6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-0a192f?style=for-the-badge&logo=javascript&logoColor=64b5f6)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0a192f?style=for-the-badge&logo=typescript&logoColor=64b5f6)
 ![React](https://img.shields.io/badge/React-0a192f?style=for-the-badge&logo=react&logoColor=64b5f6)
@@ -55,39 +55,70 @@
 
 ### 📊 GitHub Stats & Graphs
 
-<img src="./profile/stats.svg?v=1" alt="GitHub Stats" height="185"/>
-<img src="./profile/top-langs.svg?v=1" alt="Top Languages" height="185"/>
+<p align="center">
+  <img
+    src="./profile/stats.svg?v=2"
+    alt="GitHub Stats"
+    height="185"
+  />
 
-<br/><br/>
+  <img
+    src="./profile/top-langs.svg?v=2"
+    alt="Top Languages"
+    height="185"
+  />
+</p>
 
-<img src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=false&border=1e3a8a&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6&currStreakNum=e8f1ff&sideNums=e8f1ff&sideLabels=8fa3bf&dates=8fa3bf" alt="GitHub Streak"/>
+<br/>
+
+<img
+  src="https://streak-stats.demolab.com/?user=arsalancodehub-prog&hide_border=false&border=1e3a8a&background=0a192f&ring=64b5f6&fire=64b5f6&currStreakLabel=64b5f6&currStreakNum=e8f1ff&sideNums=e8f1ff&sideLabels=8fa3bf&dates=8fa3bf"
+  alt="GitHub Streak"
+/>
 
 <br/><br/>
 
 ### 📈 Contribution Overview
 
-<img src="./profile/contributions.svg?v=1" alt="GitHub Contribution Overview" width="95%"/>
+<img
+  src="./profile/contributions.svg?v=2"
+  alt="GitHub Contribution Overview"
+  width="95%"
+/>
 
 <br/><br/>
 
-### 🏆 GitHub Trophies
+### 🏆 GitHub Achievements
 
 <p align="center">
-  <img src="./profile/trophy.svg?v=5" alt="GitHub Trophies" width="95%"/>
+  <img
+    src="./profile/trophy.svg?v=6"
+    alt="GitHub Achievements"
+    width="95%"
+  />
 </p>
 
 <br/><br/>
 
 ### 🐍 Watch the Snake Eat My Contributions
 
-<img
-  src="https://raw.githubusercontent.com/arsalancodehub-prog/arsalancodehub-prog/output/github-snake.svg"
-  alt="Contribution Snake"
-/>
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/arsalancodehub-prog/arsalancodehub-prog/output/github-snake.svg?v=2"
+    alt="GitHub Contribution Snake"
+    width="95%"
+  />
+</p>
 
-<br/>
-
-<sub>White box = no commits &nbsp;·&nbsp; light blue = a few commits &nbsp;·&nbsp; dark navy = lots of code pushed 💙</sub>
+<p align="center">
+  <sub>
+    White = no contributions &nbsp;·&nbsp;
+    Light Blue = low &nbsp;·&nbsp;
+    Blue = medium &nbsp;·&nbsp;
+    Dark Blue = high &nbsp;·&nbsp;
+    Navy = highest 💙
+  </sub>
+</p>
 
 <br/><br/>
 
@@ -96,7 +127,11 @@
 <p align="center">
 
   <a href="https://www.linkedin.com/in/arsalanofficial">
-    <img src="./profile/linkedin.svg" alt="LinkedIn" height="28"/>
+    <img
+      src="./profile/linkedin.svg?v=2"
+      alt="LinkedIn"
+      height="32"
+    />
   </a>
 
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arsalandzn@gmail.com">
@@ -117,8 +152,13 @@
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=arsalancodehub-prog&color=0a192f&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
+<img
+  src="https://komarev.com/ghpvc/?username=arsalancodehub-prog&color=0a192f&style=for-the-badge&label=PROFILE+VIEWS"
+  alt="Profile Views"
+/>
 
 <br/><br/>
 
-*⭐ Always learning, always building.* 💙
+<p align="center">
+  <i>⭐ Always learning, always building.</i> 💙
+</p>
